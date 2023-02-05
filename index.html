@@ -1,0 +1,42 @@
+<script>
+	console.log(this);
+
+	function this_function() {
+		console.log(this);
+	}
+	this_function();
+
+	var object = {
+		data: "이름",
+		functionTest: function () {
+			console.log(this);
+		},
+	};
+
+	object.functionTest();
+
+	var object2 = {
+		data: {
+			functionTest: function () {
+				console.log(this);
+			},
+		},
+	};
+
+	object2.data.functionTest();
+
+	//1;
+	function 예쁜함수() {
+		//어쩌구
+	}
+
+	//2;
+	var 예쁜함수 = function () {
+		//어쩌구
+	};
+
+	//arrow 함수
+	var 예쁜함수 = () => {
+		//어쩌구
+	};
+</script>
