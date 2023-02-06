@@ -34,10 +34,10 @@
 	//5. array를 만들어주는 함수를 제작하고 싶습니다.
 	//실용성은 0이지만 일단 해보도록 합시다.
 	//파라미터로 자료들을 입력하면 그걸 그대로 array를 만들어주는 함수를 만들고 싶습니다.
-	// function array함수(...파라미터) {
-	// 	console.log(파라미터);
-	// }
-	// array함수(1, 2, 3);
+	function array함수(...파라미터) {
+		console.log(파라미터);
+	}
+	array함수(1, 2, 3);
 
 	// function 어레이(){
 	// 	(여기 어떤코드가 들어가면 될까요?)
@@ -84,5 +84,11 @@
 		});
 		console.log(결과);
 	}
+
+	// 	var 결과 = {};
+	//   [...글].forEach(function(a){
+	//      if( 결과[a] > 0 ){ 결과[a]++ } else { 결과[a] = 1 }
+	//   });
+	// console.log(결과)
 	글자세기("aacbbb");
 </script>
